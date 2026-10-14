@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+        .box{
+            border: 1px solid black;
+            height: 500px;
+            width: 800px;
+            background-color: #231942;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        .box1{
+            border: 1px solid black;
+            height: 400px;
+            width: 700px;
+            background-color: #5e548e;
+            align-items: center;
+            justify-content: center;
+        }
+        .box2{
+            border: 20px solid #9f86c0;
+            height: 300px;
+            width: 600px;
+            margin: 50px 50px 50px 50px;
+            padding: 30px 30px 30px 30px;
+            background-color: #be95c4;
+            text-align: center;
+        }
+        .box3{
+            height: 200px;
+            width: 500px;
+            /* margin: 10px; */
+            background-color: #e0b1cb;
+            text-align: center;
+            line-height: 195px;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .margin{
+            position: absolute;
+            top: 155px;
+            left: 650px;
+        }
+        .padding{
+            position: absolute;
+            top: 215px;
+            left: 650px;
+            color: white;
+        }
+        .border{
+            position: absolute;
+            top: 190px;
+            left: 650px;
+            color: white;
+        }
+        .margin,.border,.padding{ 
+            position: absolute;
+            left: 48%;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Box Plotting</h1>
+    <div class="con">
+        <div class="box">
+            <div class="box1">
+                <p class="margin">Margin</p>
+                <div class="box2">
+                    <p class="border">Border</p>
+                    <p class="padding">Padding</p>         
+                    <div class="box3">
+                        <p>Content</p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
